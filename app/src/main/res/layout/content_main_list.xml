@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_4dp"
+    android:layout_marginLeft="@dimen/margin_4dp"
+    android:layout_marginRight="@dimen/margin_4dp"
+    android:layout_marginTop="@dimen/margin_4dp">
+
+    <RelativeLayout
+        android:id="@+id/parent_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lytListHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/pad_margin_5dp"
+            android:paddingTop="@dimen/pad_margin_5dp"
+            android:weightSum="1.0">
+
+            <com.mcc.restaurant.view.MontserratTextView
+                android:id="@+id/tv_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_margin_4dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/padding_margin_4dp"
+                android:layout_weight=".80"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_16sp" />
+
+            <com.mcc.restaurant.view.MontserratTextView
+                android:id="@+id/tvSeeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".20"
+                android:gravity="right"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size_12sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytListHeader" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/section_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/pad_margin_40dp"
+        android:layout_marginTop="@dimen/pad_margin_40dp" />
+
+</RelativeLayout>

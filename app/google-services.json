@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "60460668448",
+    "firebase_url": "https://myrestaurant-ace92.firebaseio.com",
+    "project_id": "myrestaurant-ace92",
+    "storage_bucket": "myrestaurant-ace92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60460668448:android:1eb720e7f7eb332e",
+        "android_client_info": {
+          "package_name": "com.mcc.restuarant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60460668448-jpuqvpbhraubs034fo2d4lu251l316rr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOEy3v0Vy9gbdfMqT1NEMZRxD0kfKTQus"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

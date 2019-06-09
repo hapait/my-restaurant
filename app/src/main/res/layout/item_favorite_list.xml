@@ -1,0 +1,61 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="@dimen/padding_margin_4dp"
+    android:focusable="false"
+    app:cardElevation="@dimen/padding_margin_4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_margin_4dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/iv_food_pic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <com.mcc.restaurant.view.MontserratTextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_margin_4dp"
+            android:layout_toEndOf="@+id/iv_food_pic"
+            android:layout_toRightOf="@+id/iv_food_pic"
+            android:padding="@dimen/padding_margin_4dp"
+            android:text="@string/food_name_placeholder"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_16sp" />
+
+        <com.mcc.restaurant.view.MontserratTextView
+            android:id="@+id/tv_food_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_food_name"
+            android:layout_marginTop="@dimen/padding_margin_4dp"
+            android:layout_toEndOf="@+id/iv_food_pic"
+            android:layout_toRightOf="@+id/iv_food_pic"
+            android:padding="@dimen/padding_margin_4dp"
+            android:text="@string/food_price_placeholder"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_16sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_food_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/padding_margin_8dp"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

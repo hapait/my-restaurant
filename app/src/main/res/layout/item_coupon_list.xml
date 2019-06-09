@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginEnd="@dimen/margin_10dp"
+    android:layout_marginLeft="@dimen/margin_10dp"
+    android:layout_marginRight="@dimen/margin_10dp"
+    android:layout_marginStart="@dimen/margin_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_15dp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@color/light_orange" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mini_circle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mini_circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_15dp"
+            android:layout_marginEnd="@dimen/pad_margin_30dp"
+            android:layout_marginLeft="@dimen/pad_margin_30dp"
+            android:layout_marginRight="@dimen/pad_margin_30dp"
+            android:layout_marginStart="@dimen/pad_margin_30dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:weightSum="3">
+
+            <FrameLayout
+                android:layout_width="@dimen/height_width_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.mcc.restaurant.view.RobotoTextView
+                        android:id="@+id/tv_coupon_expiration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/coupon_bg_circle"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_8dp"
+                        android:text="25"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/txt_size_22sp" />
+
+                    <com.mcc.restaurant.view.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:gravity="center"
+                        android:text="@string/days"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="@dimen/height_width_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_8dp"
+                android:layout_weight="1"
+                android:background="@color/white_opacity">
+
+                <com.mcc.restaurant.view.RobotoTextView
+                    android:id="@+id/tv_coupon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="AFASJ"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt_size_22sp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

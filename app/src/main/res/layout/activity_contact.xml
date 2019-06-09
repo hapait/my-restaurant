@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_top"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg_dim">
+
+        <ImageView
+            android:id="@+id/iv_map_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/pad_margin_10dp"
+            android:scaleType="centerCrop" />
+
+        <com.mcc.restaurant.view.RobotoTextView
+            android:id="@+id/tv_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_map_image"
+            android:padding="@dimen/padding_margin_8dp"
+            android:text="@string/dummy_address"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_16sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_direction"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_above="@+id/ad_view"
+            android:layout_margin="@dimen/padding_margin_4dp"
+            android:background="@color/order_number_color"
+            android:orientation="horizontal"
+            android:textColor="@android:color/white"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button_text"
+                android:layout_toStartOf="@+id/button_text"
+                android:src="@drawable/navigation" />
+
+            <com.mcc.restaurant.view.RobotoTextView
+                android:id="@+id/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pad_margin_10dp"
+                android:layout_marginStart="@dimen/pad_margin_10dp"
+                android:text="@string/get_direction"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_size_18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="@string/banner_ad_unit_id" />
+
+    </RelativeLayout>
+</LinearLayout>

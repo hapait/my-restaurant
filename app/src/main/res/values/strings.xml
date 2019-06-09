@@ -1,0 +1,151 @@
+<resources>
+
+    <!--Common resources-->
+    <string name="app_name">My Restaurant</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_network_msg">No internet connectivity!</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="update">Update</string>
+    <string name="search_hint_product">Type name, price</string>
+    <string name="empty_list_msg">No data found!</string>
+
+    <string name="msg_loading">Loading, please wait...</string>
+    <string name="info">Info</string>
+    <string name="next">Next</string>
+    <string name="close">Close</string>
+
+    <!--Drawer menu string resources-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_category">Category</string>
+    <string name="menu_favourite">Favourites</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_setting">Settings</string>
+
+    <!--Home page-->
+    <string name="see_all">MORE</string>
+    <string name="featured_item">Featured Items</string>
+    <string name="recent_item">Recent Items</string>
+    <string name="popular_item">Popular Items</string>
+    <string name="sample_category_title">Cheese Cupcakes</string>
+
+    <!--Product list heading-->
+    <string name="list_featured">Featured items</string>
+    <string name="list_recent">Recent items</string>
+
+    <!--Product details-->
+    <string name="total_review">(Total review \u0020</string>
+    <string name="order">Order</string>
+
+    <!--Confirmation Dialog-->
+    <string name="dialog_btn_ok">OK</string>
+    <string name="dialog_btn_yes">YES</string>
+    <string name="dialog_btn_no">NO</string>
+    <string name="dialog_btn_cancel">Cancel</string>
+    <string name="delete_favourite_item">Do you want to delete this item from favourite list?</string>
+
+    <!--search / advance search-->
+    <string name="search_anything">Search anything</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="orders">\u0020orders</string>
+    <string name="size_attribute">Size/Attribute</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="to">to</string>
+    <string name="order_by">Order by</string>
+    <string name="select_order">Select order</string>
+
+    <!-- Settings activity -->
+    <string name="pref_notification_title">Notification</string>
+    <string name="pref_notification_summary">Turn on/off notification</string>
+
+    <!--Notification-->
+    <string name="notifications">Notifications</string>
+    <string name="notification_details">Notification details</string>
+    <string name="placeholder">..</string>
+
+    <string name="empty_result">No data!</string>
+
+    <string name="tech_discovery">Tech Discovery</string>
+    <string name="featured_items">Featured Items</string>
+    <string name="recent_items">Recent Items</string>
+
+    <!-- Support link url -->
+    <string name="support">Support</string>
+    <string name="support_link">http://mcc.com.bd/</string>
+
+    <string name="select_attribute">Please select product attribute.</string>
+
+    <!-- woo commerce payment methods -->
+    <string name="no_internet">No internet!</string>
+    <string name="connect">Connect</string>
+    <string name="share_text">Install best shopping application from:</string>
+
+    <string name="type_something">Type something to search</string>
+    <string name="no_notification">No notification</string>
+
+    <string name="rate">Rate App</string>
+    <string name="share">Share</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="messenger">Messenger</string>
+    <string name="others">Others</string>
+    <string name="email_support">Email</string>
+
+    <string name="install_messenger">Install facebook messenger</string>
+    <string name="permission_not_granted">Permission not granted!</string>
+
+    <string name="change_representation">Change Representation</string>
+
+    <string name="all">All</string>
+    <string name="select_category">Select Category</string>
+    <string name="empty_favourite_list">Your favourite list is empty</string>
+
+    <string name="total_orders">Total Orders</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_comment">No comment</string>
+    <string name="comments">Comments</string>
+
+    <string name="terms">Terms and Conditions</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="faq">FAQ</string>
+    <string name="coupons">Coupons</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="contact">Contact Us</string>
+    <string name="new_offers">New Offers!</string>
+    <string name="popular_items">Popular Items</string>
+    <string name="cuisines_text">Our Cuisines</string>
+    <string name="write_a_review">Write a Review</string>
+    <string name="review_confirmation">Review Posted!</string>
+    <string name="messenger_button_text">Messenger</string>
+    <string name="call_button_text">Call Now</string>
+    <string name="reviews_title_text">Reviews</string>
+    <string name="write_a_review_text">Write A Review</string>
+    <string name="days">Days\nRemaining</string>
+    <string name="empty_review_text">No Reviews Available\nDo you want to write one?</string>
+    <string name="dummy_address">We are located in the suburbs of Mohammadpur with the enjoyable quietness and our amazing dishes.
+    Find us at 6/12, Humayun road and have an amazing time here!</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="sorry_no_review">Sorry, Could not post the review</string>
+    <!-- app ad section -->
+    <string name="app_ad_id">ca-app-pub-6382099871444261~2045692236</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="our_cuisines">Our Cuisines</string>
+    <string name="start_brace">(</string>
+    <string name="end_brace">)</string>
+    <string name="food_name_placeholder">BBQ Beef Cheese Burger</string>
+    <string name="food_price_placeholder">Price $3.99</string>
+    <string name="favorite_remove">Removed From Favorite List</string>
+    <string name="favorite_added">Food added to favorite list</string>
+    <string name="could_not_load_data">Sorry Couldn\'t Load Data</string>
+    <string name="our_offers">Our Offers (</string>
+    <!-- end of the ad section -->
+
+</resources>

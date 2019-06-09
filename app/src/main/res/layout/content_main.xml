@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--set view pager-->
+            <include layout="@layout/content_view_pager" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/page_bg"
+                android:orientation="vertical">
+
+                <!--New Offers Horizontal List -->
+                <include
+                    android:id="@+id/lyt_offer_list"
+                    layout="@layout/content_main_list" />
+
+
+                <!--All Cuisines Vertical List -->
+                <include
+                    android:id="@+id/lyt_cuisines"
+                    layout="@layout/content_main_list" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- <include layout="@layout/view_common_loader" />-->
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_size_button">14sp</dimen>
+    <dimen name="padding_button">4dp</dimen>
+    <dimen name="txt_size_food_name">14sp</dimen>
+    <dimen name="txt_size_food_price">12sp</dimen>
+
+    <dimen name="nav_header_height">150dp</dimen>
+</resources>

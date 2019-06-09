@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\Ashiq\New Projects\Single Restaurant App\workspace\my-restaurant\app\app.iml" filepath="E:\Ashiq\New Projects\Single Restaurant App\workspace\my-restaurant\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-restaurant.iml" filepath="$PROJECT_DIR$/my-restaurant.iml" />
+      <module fileurl="file://C:\Users\admin\StudioProjects\mcc\my-restaurant\.idea\my-restaurant.iml" filepath="C:\Users\admin\StudioProjects\mcc\my-restaurant\.idea\my-restaurant.iml" />
+      <module fileurl="file://E:\Ashiq\New Projects\Single Restaurant App\workspace\my-restaurant\my-restaurant.iml" filepath="E:\Ashiq\New Projects\Single Restaurant App\workspace\my-restaurant\my-restaurant.iml" />
+    </modules>
+  </component>
+</project>

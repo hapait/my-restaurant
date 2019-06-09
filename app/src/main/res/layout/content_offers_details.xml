@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lytContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lyt_offer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="1">
+
+        <com.mcc.restaurant.view.MontserratTextView
+            android:id="@+id/tv_offer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/product_name_color"
+            android:textSize="@dimen/txt_size_18sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lyt_offer_title"
+        android:layout_marginTop="@dimen/pad_margin_10dp"
+        android:background="@color/detailsBoarder" />
+
+    <com.mcc.restaurant.view.RobotoTextView
+        android:id="@+id/tv_offer_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/pad_margin_10dp"
+        android:text="Offer Details"
+        android:textSize="@dimen/txt_size_16sp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_offer_details"
+        android:layout_marginTop="@dimen/pad_margin_10dp"
+        android:background="@color/detailsBoarder" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:weightSum="1.0">
+
+        <com.mcc.restaurant.view.MontserratTextView
+            android:id="@+id/tv_contact_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".50"
+            android:textColor="@color/btnMain"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="@dimen/height_width_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_margin_10dp"
+                android:src="@drawable/ic_call_white"
+                app:backgroundTint="@color/colorButtonBG"
+                app:elevation="0dp"
+                app:fabSize="mini" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_messenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_messenger_now"
+                app:backgroundTint="@color/colorButtonBG"
+                app:elevation="0dp"
+                app:fabSize="mini" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line7"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_contact"
+        android:layout_marginBottom="@dimen/pad_margin_20dp"
+        android:background="@color/detailsBoarder" />
+
+    <include
+        layout="@layout/view_common_loader"
+        android:background="@color/page_bg_dim" />
+
+</RelativeLayout>
